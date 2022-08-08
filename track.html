@@ -122,22 +122,23 @@
           <!-- START: Info -->
           <h2 class="display-4">Track Shipments:</h2>
           <div class="nk-gap mnt-3"></div>
-          <form action="#" class="nk-form nk-form-ajax">
-            <div class="nk-gap-1"></div>
-            <input
-              type="text"
-              class="form-control required"
-              name="title"
-              placeholder="Shipment ID"
-            />
 
-            <div class="nk-gap-1"></div>
-            <div class="nk-form-response-success"></div>
-            <div class="nk-form-response-error"></div>
-            <button onclick="return fromshipment()" class="nk-btn">
-              Track Shipment
-            </button>
-          </form>
+          <div class="nk-gap-1"></div>
+          <input
+            id="shipmentid"
+            type="text"
+            class="form-control required"
+            name="shipmentid"
+            placeholder="Shipment ID"
+          />
+
+          <div class="nk-gap-1"></div>
+          <div class="nk-form-response-success"></div>
+          <div class="nk-form-response-error"></div>
+          <button onclick="return fromshipment()" class="nk-btn">
+            Track Shipment
+          </button>
+
           <!-- END: Info -->
         </div>
       </div>
@@ -259,7 +260,7 @@
     <!-- START: Scripts -->
 
     <script src="assets/js/combined.js"></script>
-
+    <script src="assets/js/track.js"></script>
     <!-- END: Scripts -->
   </body>
 </html>
